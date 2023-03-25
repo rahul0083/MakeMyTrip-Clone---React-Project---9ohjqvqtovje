@@ -1,6 +1,5 @@
 import React from "react";
 import CitiesList from "./FlightOptions";
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 export default function Widget() {
   return (

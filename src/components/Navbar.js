@@ -4,10 +4,6 @@ import HotelIcon from '@material-ui/icons/Hotel';
 import TrainIcon from '@material-ui/icons/Train';
 import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import LocalTaxiIcon from '@material-ui/icons/LocalTaxi';
-import Login from './Login';
-import { selectUser, userSlice } from './UserSlice';
-import firebase from 'firebase/compat/app';
-import { useSelector } from 'react-redux';
 export default function Navbar() {
   
   return (

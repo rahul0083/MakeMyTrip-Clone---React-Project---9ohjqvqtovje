@@ -61,6 +61,7 @@ body{
     display: flex;
     /* align-items: center; */
     padding: 0px 30px;
+    cursor: pointer;
 
    
 }
@@ -82,7 +83,7 @@ a{
     content: '';
     position: absolute;
     left: 20px;
-    right: 850px;
+    right: 860px;
     background-color: #008CFF;
     height: 3px;
     bottom: 2px;   

@@ -1,0 +1,238 @@
+body{
+    background-color: rgb(2, 1, 29);
+}
+.header{
+    display: flex;
+    background-color: black;
+    padding: 40px 13px;
+    justify-content: space-between;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    margin-bottom: 20px;
+    /* z-index: 100; */
+    width: 100vw;
+    align-items: center;
+   
+  
+}
+.header__left img{
+    height: 35px;
+    margin-right: 7px;
+    margin-left: 100px;
+    cursor: pointer;
+  
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    margin-right: 80px;
+   
+}
+.header__options{
+    margin: 10px;
+   
+}
+.header__options svg{
+    color: orange;
+}
+.navbar{
+
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 40%);
+    display: flex;
+    height: 85px;
+    margin: 100px 200px;
+    position: sticky;
+    z-index: -1;
+}
+.navbar .MuiSvgIcon-root{
+    display: flex;
+    height: 38px;
+    width: 40px;
+    
+}
+.navbar_items{
+    display: flex;
+    /* align-items: center; */
+    padding: 0px 30px;
+
+   
+}
+.navbar_options{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+   
+}
+
+a{
+    color: rgba(17, 17, 17, 0.774);
+    text-decoration: none;
+}
+.navbar_items:first-child{
+    color: black;
+}
+.navbar_items:first-child::before{
+    content: '';
+    position: absolute;
+    left: 20px;
+    right: 850px;
+    background-color: #008CFF;
+    height: 3px;
+    bottom: 2px;   
+}
+.login_page{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 40%);
+    left: 50%;
+    height: 500px;
+    min-width: 510px;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 510px;
+    z-index: 2;
+}
+
+.loginscreen{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+      
+}
+.loginscreen img{
+    width: 200px;
+    margin-bottom: 20px;
+
+}
+.loginscreen input{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+.loginscreen input[type="submit"]{
+   border-radius: 0px;
+   background-color: #0077b5;
+   border: 0;
+   color: #fff;
+   letter-spacing: 2px;
+   cursor: pointer;
+}
+
+.loginscreen h4 span{
+    
+    color: #0077b5;
+    cursor: pointer;
+
+}
+.dropdown-content {
+    /* display: none; */
+   
+    position: fixed;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 20%);          
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    width:230px;
+    border-radius: 10px;
+    
+  }
+  
+
+  .logout{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+  div{
+    display: block;
+  }
+  .widgetLoader {
+    width: 1200px;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 10px;
+    height: 350px;
+    position: absolute;
+    z-index: -3;
+    top: 130px;
+    left: 0px;
+    right: 0;
+    
+}
+.widgetLoader_options{
+
+    margin-top: 50px;
+}
+.widgetSection {
+    width: 92%;
+    border-radius: 10px;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px #e7e7e7;
+    position: relative;
+    top: 100px;
+    margin-left: 40px;  
+}
+.v1 {
+    border-left: 1px solid rgba(167, 167, 167, 0.658);
+    height: 139px;
+    position: absolute;
+    left: 29%;
+    margin-left: -3px;
+    top: 0;
+    bottom: 0;
+  }
+.v2{
+    border-left: 1px solid rgba(167, 167, 167, 0.658);
+    height: 139px;
+    position: absolute;
+    left: 57%;
+    margin-left: -3px;
+    top: 0;
+    bottom: 0;
+  }
+.v3{
+    border-left: 1px solid rgba(167, 167, 167, 0.658);
+    height: 139px;
+    position: absolute;
+    left: 78%;
+    margin-left: -3px;
+    top: 0;
+    bottom: 0;
+  }
+  .search_btn{
+
+    margin: 190px;
+    margin-left: 500px;
+  }
+  .btn{
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bolder;
+   
+  }
+ 

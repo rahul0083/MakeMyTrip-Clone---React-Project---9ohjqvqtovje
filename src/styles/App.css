@@ -197,6 +197,7 @@ a{
     position: relative;
     top: 100px;
     margin-left: 40px;  
+    cursor: pointer;
 }
 .v1 {
     border-left: 1px solid rgba(167, 167, 167, 0.658);
@@ -227,7 +228,7 @@ a{
   }
   .search_btn{
 
-    margin: 190px;
+    margin: 170px;
     margin-left: 500px;
   }
   .btn{
@@ -236,4 +237,23 @@ a{
     font-weight: bolder;
    
   }
+  label{
+    font-size: x-large;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  input{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.booking{
+    margin: 100px;
+}
+.payment-page{
+    margin: 220px;
+    background: white;
+    padding:50px;
+    border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+}
  

@@ -3,12 +3,14 @@ import ReactDOM from "react-dom";
  import App from "./components/App";
  import  Store  from "./components/Store";
  import { Provider } from "react-redux";
+ import { HashRouter } from 'react-router-dom'
 
 
  
 
 ReactDOM.render(
 <React.StrictMode>
+
 <Provider store={Store} >
   <App/>
 

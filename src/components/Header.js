@@ -12,6 +12,7 @@ import firebase from 'firebase/compat/app';
 import { useSelector } from 'react-redux';
 import { logoutuser } from "./UserSlice"
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 export default function Header({name}) {
@@ -28,6 +29,10 @@ export default function Header({name}) {
   const signout=()=>{
     
     dispatch(logoutuser())
+    localStorage.removeItem("displayName");
+   
+    
+    // window.location.reload(false);
 
    }
 
@@ -47,7 +52,7 @@ export default function Header({name}) {
     <>
     <div className='header' >
        <div className="header__left">
-          <a href="/"><img src='https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png' /></a> 
+          <Link to="/"><img src='https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png' /></Link> 
         </div>
         <div className='header__right'> 
         <div className="header__options">
@@ -58,8 +63,8 @@ export default function Header({name}) {
         <span>Introducing myBiz</span>
         </div>
          <div className="header__options">
-         <CardTravelIcon />
-        <span>My Trips</span>
+        <a href="/"> <CardTravelIcon />
+        <span style={{color:"white"}}>My Trips</span></a>
          </div>
         <div className="header__options">
         <button type="button" className="btn btn-primary " onClick={loginpage_visiblity}>{name}<ArrowDropDownIcon /></button>

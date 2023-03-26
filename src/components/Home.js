@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { selectUser, userSlice } from './UserSlice';
 import { useState } from 'react';
 import Flight from './Flight'
+import API from './FlightAPI';
 
  
 export default function Home() {

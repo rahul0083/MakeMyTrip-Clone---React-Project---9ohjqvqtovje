@@ -23,39 +23,51 @@ export default function FlightBookPage() {
     const paymentHandler=()=> {
         if(!card || !name || !cvv || !exDate)
          alert("Please fill all the payment details!!");
+         else 
+          if(!user){
+            alert("Please login to continue..")
+          
+         }
         else {
             navigate("/Booked");
         }
     }
   
   return (
- <div> 
+ <div > 
        {!user?( <Header name="Login or Signup"/>)
      :(<Header name={user.displayName}/>)}
      <div className='payment-page'>
-            <h2>Price is Rs {price}</h2>
+      <h1>Complete your booking</h1>
+           
                 <h3>Enter Your Payment Details</h3>
                 <form>
+                  <div>
+                  
                     <input onChange={(e)=>setName(e.target.value)}
                     required value={name} type="name" placeholder="Card Holder's name" />
-
+                     </div>
+                     <div>
+                    
                     <input onChange={(e)=>setCard(e.target.value)}
                     required value={card} type="number" max="9999999999999999" placeholder="Card Number" />
-
+                      </div>
+                      <div>
+                      
                     <input onChange={(e)=>setCvv(e.target.value)}
-                    required value={cvv} type="tel" maxLength="3" placeholder='CVV' />
+                    required value={cvv} type="number" maxLength="3" placeholder='CVV' />
+                    </div>
                     <div>
                         <label htmlFor='ex-date'>Expiry Date:-</label>
                         <input onChange={(e)=>setExDate(e.target.value)}
                         required value={exDate} type="tel" id="ex-date" maxLength="5"  placeholder='MM/YY'/>
                     </div>
-                    <button type='submit'
-                    onClick={paymentHandler}
-                    >Proceed to payment</button>
+                    <h2>Total Amount:- Rs {price}</h2>
+                    
+                    <button type="button" class="btn btn-success" onClick={paymentHandler}>Proceed to Payment</button>
                 </form>
-                <button className='backButton' 
-                onClick={()=> navigate("/")}
-                >Go Back</button>
+                <button type="button" class="btn btn-danger" onClick={()=> navigate("/")}>Go Back</button>
+               
             </div>
  </div>
   )

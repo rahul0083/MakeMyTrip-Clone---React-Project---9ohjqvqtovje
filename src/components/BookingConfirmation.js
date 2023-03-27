@@ -11,9 +11,10 @@ export default function BookingConfirmation() {
               {!user?( <Header name="Login or Signup"/>)
      :(<Header name={user.displayName}/>)}
      <div className='booking'>
-            <h3>Congratulations!!Your Booking is Confirmed...</h3>
-            
-            <button  onClick={()=>navigate("/")}>Go To Home Page</button>
+      <img src="" alt="" />
+      <h3>Congratulations!!Your Booking is Confirmed...</h3>
+      <button type="button" class="btn btn-success" onClick={()=>navigate("/")} >Go To Home Page</button>
+        
             </div>
     </div>
   )

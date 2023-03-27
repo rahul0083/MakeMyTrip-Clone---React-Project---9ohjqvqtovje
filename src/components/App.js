@@ -53,6 +53,7 @@ const App = () => {
           <Route exact path='/Payment' element={<FlightBookPage />} />
           <Route exact path='/Booked' element={<BookingConfirmation />} />
        
+       
         </Routes>
       </BrowserRouter>
     </div>

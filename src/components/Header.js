@@ -13,10 +13,11 @@ import { useSelector } from 'react-redux';
 import { logoutuser } from "./UserSlice"
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Header({name}) {
-
+  const navigate = useNavigate();
   const user=useSelector(selectUser);
   const dispatch=useDispatch();
    
@@ -29,11 +30,8 @@ export default function Header({name}) {
   const signout=()=>{
     
     dispatch(logoutuser())
-    localStorage.removeItem("displayName");
-   
-    
-    // window.location.reload(false);
-
+    localStorage.removeItem("user");
+    navigate("/")
    }
 
  const loginpage_visiblity=()=>{
@@ -52,7 +50,7 @@ export default function Header({name}) {
     <>
     <div className='header' >
        <div className="header__left">
-          <Link to="/"><img src='https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png' /></Link> 
+        <a href="/"><img src='https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png' /></a>
         </div>
         <div className='header__right'> 
         <div className="header__options">
@@ -68,7 +66,7 @@ export default function Header({name}) {
          </div>
         <div className="header__options">
         <button type="button" className="btn btn-primary " onClick={loginpage_visiblity}>{name}<ArrowDropDownIcon /></button>
-       {!show1&&user&&
+       {show1&&user&&
         <div className="dropdown-content">
       <a className="logout" onClick={signout}>LogOut</a>
     </div> }      

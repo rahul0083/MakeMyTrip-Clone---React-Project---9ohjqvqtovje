@@ -4,9 +4,20 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { loginuser, selectUser } from './UserSlice';
 import firebase from 'firebase/app';
+import { signInwithGoogle } from './Firebase';
+import {signwithphone} from './Firebase'
+import {getAuth, GoogleAuthProvider, signInWithPopup,signInWithPhoneNumber} from "firebase/auth";
 
 
 export default function Login() {
+
+  
+  const redirect=()=>{
+   return signInwithGoogle();
+ 
+  }
+ 
+
 
     const [signUp,setSignUp]=useState(false);
     const [name,setName]=useState("");
@@ -128,7 +139,15 @@ export default function Login() {
              
              </form> )
          }
-     
+         <div className='google_signin'>
+          <p>Or</p>
+         <p> Login or Sign up with</p>
+         <button onClick={redirect}><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt="gimage" /> </button>
+     </div>
+     {/* or
+     <input type="number" value={ph}  onChange={(e)=>setPh(e.target.value)} />
+     <button onClick={redirect2}>Click me</button> */}
+
 
     </div>
 

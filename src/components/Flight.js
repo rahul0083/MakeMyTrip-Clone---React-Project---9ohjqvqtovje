@@ -4,7 +4,7 @@ import FlightAPI from './FlightAPI'
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter, Route, Routes,Link } from "react-router-dom";
 import FlightIcon from '@material-ui/icons/Flight';
-import LinearScaleIcon from '@material-ui/icons/LinearScale';
+import ArrowRightAltOutlinedIcon from '@material-ui/icons/ArrowRightAltOutlined';
 
 
 export default function Widget() {
@@ -104,7 +104,7 @@ export default function Widget() {
               <h3>Flights from {flight.from} to {flight.to}</h3>
               <div className="flight_results_data">
                 <div><FlightIcon /></div>
-              <div className='flight-route'><h4>{flight.from} <LinearScaleIcon />{flight.to}</h4></div>
+              <div className='flight-route'><h4>{flight.from} <ArrowRightAltOutlinedIcon />{flight.to}</h4></div>
               <div className='flight-time'>Time: {flight.departure.departureTime} | Date: {flight.departure.departureDate}</div>
               <div className='flight-airline'>Airline: {flight.airlineName}</div>
               <div className='flight-airline'>Via: {flight.via}</div>

@@ -15,7 +15,6 @@ import BookingConfirmation from './BookingConfirmation';
 const App = () => {
 
   const user=useSelector(selectUser)
-
   const dispatch=useDispatch();
   
   

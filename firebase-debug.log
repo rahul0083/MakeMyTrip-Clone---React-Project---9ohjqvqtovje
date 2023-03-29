@@ -1,0 +1,118 @@
+[debug] [2023-03-29T11:40:58.788Z] ----------------------------------------------------------------------
+[debug] [2023-03-29T11:40:58.792Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2023-03-29T11:40:58.793Z] CLI Version:   11.24.1
+[debug] [2023-03-29T11:40:58.793Z] Platform:      win32
+[debug] [2023-03-29T11:40:58.794Z] Node Version:  v16.13.1
+[debug] [2023-03-29T11:40:58.838Z] Time:          Wed Mar 29 2023 17:10:58 GMT+0530 (India Standard Time)
+[debug] [2023-03-29T11:40:58.838Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-29T11:40:58.854Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as rahulme0083@gmail.com
+[debug] [2023-03-29T11:41:08.924Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\OM\AppData\Roaming\nvm\v16.13.1\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-03-29T11:41:24.261Z] ----------------------------------------------------------------------
+[debug] [2023-03-29T11:41:24.268Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-29T11:41:24.269Z] CLI Version:   11.24.1
+[debug] [2023-03-29T11:41:24.269Z] Platform:      win32
+[debug] [2023-03-29T11:41:24.269Z] Node Version:  v16.13.1
+[debug] [2023-03-29T11:41:24.271Z] Time:          Wed Mar 29 2023 17:11:24 GMT+0530 (India Standard Time)
+[debug] [2023-03-29T11:41:24.272Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-29T11:41:24.280Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-03-29T11:41:24.332Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-29T11:41:24.334Z] > authorizing via signed-in user (rahulme0083@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\RAHUL\JAVA\MakeMyTrip-Clone---React-Project---9ohjqvqtovje
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-29T11:41:43.436Z] > refreshing access token with scopes: []
+[debug] [2023-03-29T11:41:43.437Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-29T11:41:43.438Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-03-29T11:41:45.614Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2023-03-29T11:42:04.454Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-03-29T11:42:09.479Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\OM\AppData\Roaming\nvm\v16.13.1\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-03-29T11:44:37.772Z] ----------------------------------------------------------------------
+[debug] [2023-03-29T11:44:37.776Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2023-03-29T11:44:37.777Z] CLI Version:   11.24.1
+[debug] [2023-03-29T11:44:37.777Z] Platform:      win32
+[debug] [2023-03-29T11:44:37.777Z] Node Version:  v16.13.1
+[debug] [2023-03-29T11:44:37.779Z] Time:          Wed Mar 29 2023 17:14:37 GMT+0530 (India Standard Time)
+[debug] [2023-03-29T11:44:37.779Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-29T11:44:37.786Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as rahulme0083@gmail.com
+[debug] [2023-03-29T11:44:47.859Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\OM\AppData\Roaming\nvm\v16.13.1\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-03-29T11:44:55.213Z] ----------------------------------------------------------------------
+[debug] [2023-03-29T11:44:55.218Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-29T11:44:55.219Z] CLI Version:   11.24.1
+[debug] [2023-03-29T11:44:55.219Z] Platform:      win32
+[debug] [2023-03-29T11:44:55.219Z] Node Version:  v16.13.1
+[debug] [2023-03-29T11:44:55.221Z] Time:          Wed Mar 29 2023 17:14:55 GMT+0530 (India Standard Time)
+[debug] [2023-03-29T11:44:55.221Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-29T11:44:55.229Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-03-29T11:44:55.277Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-29T11:44:55.278Z] > authorizing via signed-in user (rahulme0083@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\RAHUL\JAVA\MakeMyTrip-Clone---React-Project---9ohjqvqtovje
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-03-29T11:45:16.352Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2023-03-29T11:45:41.664Z] > refreshing access token with scopes: []
+[debug] [2023-03-29T11:45:41.666Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-29T11:45:41.667Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-29T11:46:02.731Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-03-29T11:46:07.751Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\OM\AppData\Roaming\nvm\v16.13.1\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+[error] 
+[error] Error: An unexpected error has occurred.

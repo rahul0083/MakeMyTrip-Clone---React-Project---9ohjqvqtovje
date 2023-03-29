@@ -116,3 +116,27 @@ For CI servers and headless environments, generate a new token with firebase log
     at processTimers (node:internal/timers:500:7)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2023-03-29T11:46:47.672Z] ----------------------------------------------------------------------
+[debug] [2023-03-29T11:46:47.677Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-29T11:46:47.677Z] CLI Version:   11.24.1
+[debug] [2023-03-29T11:46:47.678Z] Platform:      win32
+[debug] [2023-03-29T11:46:47.678Z] Node Version:  v16.13.1
+[debug] [2023-03-29T11:46:47.679Z] Time:          Wed Mar 29 2023 17:16:47 GMT+0530 (India Standard Time)
+[debug] [2023-03-29T11:46:47.680Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-29T11:46:47.685Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-03-29T11:46:47.726Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-29T11:46:47.726Z] > authorizing via signed-in user (rahulme0083@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\RAHUL\JAVA\MakeMyTrip-Clone---React-Project---9ohjqvqtovje
+
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-03-29T11:47:08.847Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json

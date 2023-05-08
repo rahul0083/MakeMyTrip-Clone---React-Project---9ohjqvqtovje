@@ -7,6 +7,9 @@ import { selectUser, userSlice } from './UserSlice';
 import { useState } from 'react';
 import Flight from './Flight'
 import API from './FlightAPI';
+import Footer from './Footer';
+import Content from './Content';
+
 
  
 export default function Home() {
@@ -21,7 +24,9 @@ export default function Home() {
      
      }
       <Navbar />
-     <Flight />
+      <Flight />
+      <Content />
+     <Footer />
     </div>
   )
 }

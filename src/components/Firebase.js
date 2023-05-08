@@ -18,6 +18,7 @@ const db=firebaseApp.firestore();
 const auth=firebase.auth();
 
 export {db,auth}
+
 const provider=new GoogleAuthProvider()
 export const signInwithGoogle =()=>{
   console.log("sign in")

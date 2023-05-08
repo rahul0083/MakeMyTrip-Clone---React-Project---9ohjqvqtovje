@@ -4,18 +4,16 @@ import ReactDOM from "react-dom";
  import  Store  from "./components/Store";
  import { Provider } from "react-redux";
  import { HashRouter } from 'react-router-dom'
-
+ import 'react-toastify/dist/ReactToastify.css';
 
  
 
 ReactDOM.render(
-<React.StrictMode>
 
 <Provider store={Store} >
   <App/>
 
-  </Provider>
-</React.StrictMode>,
+  </Provider>,
 document.getElementById("root")
 
 );

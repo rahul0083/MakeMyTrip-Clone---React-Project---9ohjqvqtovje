@@ -4,6 +4,8 @@ import { useLocation } from 'react-router-dom'
 import { loginuser, logoutuser, selectUser } from './UserSlice';
 import {useDispatch, useSelector, useContext}  from 'react-redux';
 import Header from './Header';
+import Footer from './Footer';
+
 export default function FlightBookPage() {
 
   const user=useSelector(selectUser)
@@ -69,6 +71,7 @@ export default function FlightBookPage() {
                 <button type="button" class="btn btn-danger" onClick={()=> navigate("/")}>Go Back</button>
                
             </div>
+            <Footer />
  </div>
   )
 }
